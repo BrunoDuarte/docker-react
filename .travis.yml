@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install: 
-  - docker build -t brunoduarte/docker-react -f Dockerfile.dev .
+  - docker build -t frankbruno/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run brunoduarte/docker-react npm run test -- --command
+  - docker run frankbruno/docker-react npm run test -- --command
